@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Car Assignment</title>
+    <link rel="stylesheet" href="drivers.css">
+</head>
+<body>
+
+    <nav>
+        <div class='navgrid'>
+            <a><img href="#" src='logo.png.png' alt='InFormed Car Logo'></a>
+            <h1>Ideal Car</h1>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <form id="ideal-car" action="get">
+
+        <fieldset id="personal-info">
+            <legend>Personal Info</legend>
+
+            <label for="firstName">First Name
+                <input type="text" id="firstName" name="firstName" required placeholder="Seth">
+            </label> <br><br>
+
+            <label for="lastName">Last Name 
+                <input type="text" id="lastName" name="lastName" required placeholder="Johnson">
+            </label> <br><br>
+
+            <label for="licensePlate">License Plate
+                <input type="text" id="licensePlate" name="licensePlate" required placeholder="FFF999">
+            </label> <br><br>
+                
+
+        </fieldset>
+
+        <br> <br>
+
+        <fieldset id="customization">
+            <legend>Car Featuers</legend>
+
+            <select id="manufacturer" name="manufacturer" style="width: 250px" required>
+                <option value="chevy">Chevy</option>
+                <option value="ford">Ford</option>
+                <option value="tesla">Tesla</option>
+                <option value="bmw">BMW</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="gmc">GMC</option>
+                <option value="jeep">Jeep</option>
+            </select>
+
+            <br><br>
+            
+            <label for="boxColor">Pick Your Color
+                <input type="color" id="boxColor" name="boxColor" required/>
+            </label>
+
+            <br><br>
+
+            <input type="checkbox" id="four-wheel" name="drive-options" value="four-wheel"/>
+                <label for="four-wheel">Four Wheel Drive</label><br />
+
+            <input type="checkbox" id="front-wheel" name="drive-options" value="front-wheel"/>
+                <label for="front-wheel">Front Wheel Drive</label><br />
+
+            <input type="checkbox" id="rear-wheel" name="drive-options" value="rear-wheel"/>
+                <label for="rear-wheel">Rear Wheel Drive</label><br />
+
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset id="personal-comments">
+            <legend>Comments</legend>
+
+            <label for="comments">Additional Feedback
+                <textarea id="comments" name="comments" placeholder="Leave any feedback here!" required>
+                </textarea>
+            </label>
+        </fieldset>
+
+        <br> <br>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+    
+</body>
+</html>
